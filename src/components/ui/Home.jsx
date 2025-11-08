@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <div className="text-xl text-gray-800 font-bold underline font-sans">
       This is Home Page of Portfolio Website
+      <button>Visit</button>
     </div>
   );
 };
