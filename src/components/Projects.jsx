@@ -69,10 +69,22 @@ export default function Projects() {
               <h3 className="text-lg font-semibold text-purple-500 dark:text-yellow-100">
                 Caffeine
               </h3>
-              <p className="my-3">
-                Designed and developed an online coffee shop, focusing on
-                improving UI/UX, and deployed on Render. Implemented responsive
-                design, ensuring seamless user experience across devices.
+              <p className="my-3 text-justify tracking-[0.5px]">
+                Technologies Used: ...
+              </p>
+              <p className="my-3 text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
               </p>
               <div className="flex items-center gap-1">
                 <a href="https://caffeine-shop.onrender.com/" target="_blank">
