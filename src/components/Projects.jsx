@@ -20,8 +20,8 @@ export default function Projects() {
         <FadeInOnScroll delay={0.1}>
           <div className="w-full flex gap-5 flex-col md:flex-row-reverse bg-gray-500/5 p-5 rounded-xl border border-black/5 dark:border-white/5">
             <div className="w-full max-w-90 h-50 md:h-auto bg-gray-800 relative rounded-lg overflow-hidden">
-              <img src="" className="w-4/5 h-4/5" />
-              <img src="" className="absolute h-9/10 -bottom-5 right-0" />
+              <img src="#" className="w-4/5 h-4/5" />
+              <img src="#" className="absolute h-9/10 -bottom-5 right-0" />
             </div>
             <div className="w-full md:w-6/9">
               <h3 className="text-lg font-semibold text-purple-500 dark:text-yellow-200">
@@ -64,7 +64,7 @@ export default function Projects() {
 
         <FadeInOnScroll delay={0.25}>
           <div className="w-full flex flex-col md:flex-row bg-gray-500/5 p-5 rounded-xl border border-black/5 dark:border-white/5">
-            <img src="/images/girl2.png" className="w-50" />
+            <img src="#" className="w-50" />
             <div>
               <h3 className="text-lg font-semibold text-purple-500 dark:text-yellow-100">
                 Caffeine
@@ -110,11 +110,8 @@ export default function Projects() {
         <FadeInOnScroll delay={0.4}>
           <div className="w-full flex gap-5 flex-col md:flex-row-reverse bg-gray-500/5 p-5 rounded-xl border border-black/5 dark:border-white/5">
             <div className="w-full max-w-90 h-50 md:h-auto bg-gray-800 relative rounded-lg overflow-hidden">
-              <img src="/images/trendz1.png" className="w-4/5 h-4/5" />
-              <img
-                src="/images/trendz2.png"
-                className="absolute h-9/10 -bottom-5 right-0"
-              />
+              <img src="#" className="w-4/5 h-4/5" />
+              <img src="#" className="absolute h-9/10 -bottom-5 right-0" />
             </div>
             <div className="w-full md:w-6/9">
               <h3 className="text-lg font-semibold text-purple-500 dark:text-yellow-200">
