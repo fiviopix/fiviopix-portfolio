@@ -1,6 +1,7 @@
 {
   "name": "fivio-portfolio",
   "private": true,
+  "homepage": "https://fivio.in/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
