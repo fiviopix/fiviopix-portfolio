@@ -7,62 +7,52 @@ export default function About() {
       id="about"
       className="scroll-mt-[10vh] m-0 md:m-8 lg:m-16 p-4 min-h-screen"
     >
+      {/* Section Header */}
       <div className="flex items-center gap-3 mb-5">
-        <h2 className="min-w-30 text-blue-500 dark:text-blue-400 text-2xl font-bold ">
+        <h2 className="min-w-30 text-blue-500 dark:text-blue-400 text-3xl font-extrabold tracking-wide">
           About Us
         </h2>
         <span className="flex items-center w-full text-blue-500 dark:text-blue-400">
-          <Circle size={12} className=" fill-blue-500 fill:text-blue-400" />
-          <hr className="w-full " />
+          <Circle size={12} className="fill-blue-500" />
+          <hr className="w-full border-blue-500/30 dark:border-blue-400/30" />
         </span>
       </div>
 
+      {/* Who We Are */}
       <FadeInOnScroll>
-        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-5 gap-5 mb-10">
+        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-6 gap-5 mb-10 shadow-sm">
           <div>
-            <h2 className="text-lg font-semibold text-blue-400 mb-2">
+            <h3 className="text-xl font-semibold text-blue-400 mb-3">
               Who We Are
-            </h2>
-            <p className="text-justify">
+            </h3>
+            <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
               → We are a forward-thinking digital solutions company dedicated to
               building impactful, high-quality, and future-ready products for
               businesses worldwide. At our core, we believe that great ideas
               deserve great execution — and that’s exactly what we deliver
               through design excellence, cutting-edge technology, and strategic
-              thinking. <br />
-              → Our company brings together a diverse team of skilled
-              professionals — developers, designers, and innovators — who share
-              a common goal: to craft digital experiences that make a
-              difference. With a blend of creativity, technical expertise, and
-              business insight, we help brands grow, connect, and thrive in
-              today’s competitive digital landscape. <br />
-              → We started with a simple vision — to make technology more
-              accessible, beautiful, and meaningful. What began as a small
-              freelancing group has now evolved into a full-fledged digital
-              agency, delivering customized solutions that drive real results.
-              <br />
-              → From startups to established enterprises, we partner with
-              organizations of all sizes to turn their challenges into
-              opportunities through tailored web, mobile, and AI-driven
-              solutions. Every project we take on reflects our passion for
-              innovation, attention to detail, and commitment to delivering
-              measurable value. <br />→ At FivioPix, we don’t just create
-              products — we create partnerships built on trust, transparency,
-              and shared success. Our approach combines creative strategy,
-              modern technology, and seamless collaboration to ensure that every
-              solution we deliver aligns perfectly with our clients’ goals and
-              vision.
+              thinking.
+              <br />→ Our team combines creativity, technical expertise, and
+              business insight to help brands grow, connect, and thrive in
+              today’s competitive digital landscape.
+              <br />→ We’ve evolved from a small freelancing group into a
+              full-fledged digital agency delivering customized, result-oriented
+              solutions.
+              <br />→ At FivioPix, we don’t just create products — we create
+              partnerships built on trust, transparency, and shared success.
             </p>
           </div>
         </div>
       </FadeInOnScroll>
+
+      {/* Vision */}
       <FadeInOnScroll delay={0.1}>
-        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-5 gap-5 mb-10">
+        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-6 gap-5 mb-10 shadow-sm">
           <div>
-            <h2 className="text-lg font-semibold text-blue-400 mb-2">
+            <h3 className="text-xl font-semibold text-blue-400 mb-3">
               Our Vision
-            </h2>
-            <p className="text-justify">
+            </h3>
+            <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
               To become a trusted digital partner for businesses around the
               world — by delivering innovative, performance-driven, and
               human-centered solutions that empower brands to stand out in the
@@ -71,95 +61,134 @@ export default function About() {
           </div>
         </div>
       </FadeInOnScroll>
+
+      {/* Mission */}
       <FadeInOnScroll delay={0.2}>
-        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-5 gap-5 mb-10">
+        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-6 gap-5 mb-10 shadow-sm">
           <div>
-            <h2 className="text-lg font-semibold text-blue-400 mb-2">
+            <h3 className="text-xl font-semibold text-blue-400 mb-3">
               Our Mission
-            </h2>
-            <p className="text-justify">
+            </h3>
+            <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
               To bridge creativity and technology to solve real-world
-              challenges. To deliver top-notch digital products that combine
-              design elegance with technical precision. To build lasting
-              relationships with clients through transparency, communication,
+              challenges. We aim to deliver top-notch digital products that
+              combine design elegance with technical precision while building
+              lasting client relationships through transparency, communication,
               and consistent results.
             </p>
           </div>
         </div>
       </FadeInOnScroll>
+
+      {/* Philosophy */}
       <FadeInOnScroll delay={0.3}>
-        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-5 gap-5 mb-10">
+        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-6 gap-5 mb-10 shadow-sm">
           <div>
-            <h2 className="text-lg font-semibold text-blue-400 mb-2">
+            <h3 className="text-xl font-semibold text-blue-400 mb-3">
               Our Work Philosophy
-            </h2>
-            <p className="text-justify">
-              At our core, we believe in three principles: Innovation.
-              Simplicity. Impact.
+            </h3>
+            <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+              We follow three principles: <b>Innovation</b>, <b>Simplicity</b>,
+              and <b>Impact</b>.
               <br /> Innovation → We constantly explore new tools, trends, and
-              technologies to bring fresh perspectives to every project. <br />{" "}
-              Simplicity → We design solutions that are clean, intuitive, and
-              user-first.
-              <br />
-              Impact → Every line of code, every pixel, and every decision is
-              made with the end goal of creating measurable results for our
-              clients. We treat every project as a collaboration, not just a
-              contract. That’s why our clients see us not as freelancers — but
-              as part of their team.
+              technologies to bring fresh perspectives.
+              <br /> Simplicity → We design intuitive, user-first solutions.
+              <br /> Impact → Every decision aims to create measurable results
+              for our clients — treating each project as a collaboration, not
+              just a contract.
             </p>
           </div>
         </div>
       </FadeInOnScroll>
-      <h2 className="text-blue-500 dark:text-blue-400 text-xl font-bold my-5">
-        Technologies We work with
-      </h2>
-      <div>
-        <h3 className="text-gray-600 dark:text-gray-300 text-lg font-semibold my-5">
-          Programming languages
-        </h3>
-        <FadeInOnScroll delay={0.3}>
-          {" "}
-          <div className="flex flex-wrap gap-8">
-            <div className="bg-gray-500/15 rounded-full p-3">
-              <img src="/images/js.png" className="w-16 h-16" />
-            </div>
-            <div className="bg-gray-500/15 rounded-full p-3">
-              <img src="/images/java.png" className="w-16 h-16" />
-            </div>
-            <div className="bg-gray-500/15 rounded-full p-3">
-              <img src="/images/sql.png" className="w-16 h-16" />
-            </div>
-          </div>
-        </FadeInOnScroll>
 
-        <h3 className="text-gray-600 dark:text-gray-300 text-lg font-semibold my-5">
-          Frameworks / Libraries
-        </h3>
-        <FadeInOnScroll delay={0.5}>
-          <div className="flex flex-wrap gap-10">
-            <img
-              src="/images/mongo.png"
-              className="w-20 h-20 rounded-full border-2 p-0.5 border-blue-400/20"
-            />
-            <img
-              src="/images/express.png"
-              className="bg-gray-50 w-20 h-20 rounded-full border-2 p-0.5 border-blue-400/20"
-            />
-            <img
-              src="/images/react.png"
-              className="w-20 h-20 rounded-full border-2 p-0.5 border-blue-400/20"
-            />
-            <img
-              src="/images/node.png"
-              className="w-20 h-20 rounded-full border-2 p-0.5 border-blue-400/20"
-            />
-            <img
-              src="/images/tailwind.png"
-              className="w-20 h-20 rounded-full border-2 p-0.5 border-blue-400/20"
-            />
-          </div>
-        </FadeInOnScroll>
-      </div>
+      {/* Technologies */}
+      <h2 className="text-blue-500 dark:text-blue-400 text-2xl font-bold my-5">
+        Technologies We Work With
+      </h2>
+
+      {/* Languages */}
+      <h3 className="text-gray-700 dark:text-gray-300 text-lg font-semibold my-5">
+        Programming Languages
+      </h3>
+
+      <FadeInOnScroll delay={0.3}>
+        <div className="flex flex-wrap justify-start items-center">
+          {[
+            { src: "/images/js.png", title: "JavaScript" },
+            { src: "/images/ts.png", title: "TypeScript" },
+            { src: "/images/java.png", title: "Java" },
+            { src: "/images/sql.png", title: "SQL" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center relative"
+            >
+              <div
+                className="h-[90px] w-[90px] rounded-full m-5 flex justify-center items-center overflow-hidden
+                bg-[linear-gradient(145.13deg,#edc6a5_40%,#383850_100%)]
+                animate-[jump_2s_ease-in-out_infinite] shadow-[0_4px_20px_rgba(0,0,0,0.25)]"
+              >
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  className="h-[70%] w-[70%] object-contain mix-blend-multiply"
+                />
+              </div>
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mt-[-10px]">
+                {item.title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </FadeInOnScroll>
+
+      {/* Frameworks */}
+      <h3 className="text-gray-700 dark:text-gray-300 text-lg font-semibold my-5">
+        Frameworks / Libraries
+      </h3>
+
+      <FadeInOnScroll delay={0.5}>
+        <div className="flex flex-wrap justify-start items-center">
+          {[
+            { src: "/images/springboot.png", title: "Spring boot" },
+            { src: "/images/mongo.png", title: "MongoDB" },
+            { src: "/images/express.png", title: "Express" },
+            { src: "/images/react.png", title: "React" },
+            { src: "/images/node.png", title: "Node.js" },
+            { src: "/images/tailwind.png", title: "Tailwind CSS" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center relative"
+            >
+              <div
+                className="h-[90px] w-[90px] rounded-full m-5 flex justify-center items-center overflow-hidden
+                bg-[linear-gradient(145.13deg,#edc6a5_40%,#383850_100%)]
+                animate-[jump_2s_ease-in-out_infinite] shadow-[0_4px_20px_rgba(0,0,0,0.25)]"
+              >
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  className="h-[70%] w-[70%] object-contain mix-blend-multiply"
+                />
+              </div>
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mt-[-10px]">
+                {item.title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </FadeInOnScroll>
+
+      {/* Animations */}
+      <style>
+        {`
+          @keyframes jump {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+          }
+        `}
+      </style>
     </div>
   );
 }
