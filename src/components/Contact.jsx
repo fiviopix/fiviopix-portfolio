@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import { Circle } from "lucide-react";
 import FadeInOnScroll from "./FadeInOnScroll";
@@ -13,12 +13,27 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("in function");
+    
     try {
-      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, form);
+      const templateParams = {
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      };
+
+      await emailjs.send(
+        "service_mt6mi5u",
+        "template_0n1hxwq",
+        templateParams,
+        "rKecF16NSpxJjLQ5K"
+      );
+
       setForm({ name: "", email: "", message: "" });
       toast.success("Message sent successfully!");
-    } catch (err) {
-      toast.error("Failed to send message.");
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to send message. Please try again later.");
     }
   };
 
@@ -32,10 +47,11 @@ export default function Contact() {
           Contact Us
         </h2>
         <span className="flex items-center w-full text-blue-500 dark:text-blue-400">
-          <Circle size={12} className=" fill-blue-500 fill:text-blue-400" />
-          <hr className="w-full " />
+          <Circle size={12} className="fill-blue-500 fill:text-blue-400" />
+          <hr className="w-full" />
         </span>
       </div>
+
       <FadeInOnScroll delay={0.1}>
         <form
           onSubmit={handleSubmit}
@@ -52,6 +68,7 @@ export default function Contact() {
           <input
             name="email"
             placeholder="Email"
+            type="email"
             value={form.email}
             onChange={handleChange}
             className="border border-black/10 dark:border-white/10 w-4/6 p-2 rounded-lg"
