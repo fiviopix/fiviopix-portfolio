@@ -37,16 +37,13 @@ const Header = () => {
       <nav className="mx-auto h-full px-5 flex items-center justify-between">
         <a
           href="/"
-          className="text-2xl font-bold text-blue-600 dark:text-blue-400 hover:-translate-y-1 hover:scale-105 transition-transform"
+          className="text-3xl ml-5 font-bold text-blue-600 dark:text-blue-400 hover:-translate-y-1 hover:scale-105 transition-transform"
         >
           <span className="text-blue-500">F</span>
           <span className="text-red-500">i</span>
           <span className="text-green-500">v</span>
           <span className="text-yellow-500">i</span>
           <span className="text-violate-500">o</span>
-          <span className="text-red-500">P</span>
-          <span className="text-green-500">i</span>
-          <span className="text-orange-500">x</span>
         </a>
 
         <div className="flex items-center gap-4">

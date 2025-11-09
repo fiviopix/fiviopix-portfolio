@@ -39,15 +39,14 @@ export default function Contact() {
       <FadeInOnScroll delay={0.1}>
         <form
           onSubmit={handleSubmit}
-          className="bg-gray-500/5 p-3 md:p-8 rounded-xl space-y-4"
+          className="bg-gray-500/5 p-3 md:mx-30 md:p-8 rounded-xl space-y-4 flex flex-col items-center"
         >
-          <h2>Write message...</h2>
           <input
             name="name"
             placeholder="Name"
             value={form.name}
             onChange={handleChange}
-            className="border border-black/10 dark:border-white/10 p-2 w-full rounded-lg"
+            className="border border-black/10 dark:border-white/10 w-4/6 p-2 rounded-lg"
             required
           />
           <input
@@ -55,7 +54,7 @@ export default function Contact() {
             placeholder="Email"
             value={form.email}
             onChange={handleChange}
-            className="border border-black/10 dark:border-white/10 p-2 w-full rounded-lg"
+            className="border border-black/10 dark:border-white/10 w-4/6 p-2 rounded-lg"
             required
           />
           <textarea
@@ -63,12 +62,12 @@ export default function Contact() {
             placeholder="Message"
             value={form.message}
             onChange={handleChange}
-            className="border border-black/10 dark:border-white/10 p-2 w-full rounded-lg"
+            className="border border-black/10 dark:border-white/10 w-4/6 p-2 rounded-lg"
             required
           />
           <button
             type="submit"
-            className="font-semibold hover:scale-95 transition-transform p-2 rounded-lg bg-blue-400/15 text-blue-400 px-8 py-2"
+            className="font-semibold hover:scale-95 transition-transform m-1 p-2 px-20 rounded-lg bg-blue-400/15 text-blue-400 py-2"
           >
             Send
           </button>
