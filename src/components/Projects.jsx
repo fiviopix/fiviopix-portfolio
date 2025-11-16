@@ -67,7 +67,7 @@ export default function Projects() {
             <img src="/images/girl2.png" className="w-50" />
             <div>
               <h3 className="text-lg font-semibold text-purple-500 dark:text-yellow-100">
-                Caffeine
+                Caffeine Corner
               </h3>
               <p className="my-3">
                 Designed and developed an online coffee shop, focusing on
