@@ -18,33 +18,6 @@ export default function About() {
         </span>
       </div>
 
-      {/* Who We Are */}
-      <FadeInOnScroll>
-        <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-6 gap-5 mb-10 shadow-sm">
-          <div>
-            <h3 className="text-xl font-semibold text-blue-400 mb-3">
-              Who We Are
-            </h3>
-            <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
-              → We are a forward-thinking digital solutions company dedicated to
-              building impactful, high-quality, and future-ready products for
-              businesses worldwide. At our core, we believe that great ideas
-              deserve great execution — and that’s exactly what we deliver
-              through design excellence, cutting-edge technology, and strategic
-              thinking.
-              <br />→ Our team combines creativity, technical expertise, and
-              business insight to help brands grow, connect, and thrive in
-              today’s competitive digital landscape.
-              <br />→ We’ve evolved from a small freelancing group into a
-              full-fledged digital agency delivering customized, result-oriented
-              solutions.
-              <br />→ At FivioPix, we don’t just create products — we create
-              partnerships built on trust, transparency, and shared success.
-            </p>
-          </div>
-        </div>
-      </FadeInOnScroll>
-
       {/* Vision */}
       <FadeInOnScroll delay={0.1}>
         <div className="flex flex-col md:flex-row items-center bg-gray-500/10 rounded-xl p-6 gap-5 mb-10 shadow-sm">

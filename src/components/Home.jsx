@@ -69,7 +69,7 @@ const Home = () => {
         <Link
           to="projects"
           smooth={true}
-          duration={1000}
+          duration={1}
           offset={-70}
           spy={true}
           activeClass="text-blue-600 dark:text-blue-400"
