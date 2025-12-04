@@ -1,6 +1,7 @@
 import { Link2, Github, Circle } from "lucide-react";
 import FadeInOnScroll from "./FadeInOnScroll";
 
+
 export default function Projects() {
   return (
     <section
@@ -19,30 +20,18 @@ export default function Projects() {
       <div className="flex flex-col items-center gap-5">
         <FadeInOnScroll delay={0.1}>
           <div className="w-full flex gap-5 flex-col md:flex-row-reverse bg-gray-500/5 p-5 rounded-xl border border-black/5 dark:border-white/5">
-            <div className="w-full max-w-90 h-50 md:h-auto bg-gray-800 relative rounded-lg overflow-hidden">
-              <img src="" className="w-4/5 h-4/5" />
-              <img src="" className="absolute h-9/10 -bottom-5 right-0" />
+            <div className="w-full max-w-90 h-90 md:h-50 bg-gray-800 relative rounded-lg overflow-hidden">
+              <img src="/images/Stoke.jpg" className="w-full h-full object cover" />
             </div>
             <div className="w-full md:w-6/9">
               <h3 className="text-lg font-semibold text-purple-500 dark:text-yellow-200">
-                Project-name
+                StockTracker Hub
               </h3>
               <p className="my-3 text-justify tracking-[0.5px]">
-                Technologies used: ---
+                Technologies used: MERN stack
               </p>
               <p className="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                Stocks Watchlist Manager is a project which helps people to analyze, create, and update watchlists as they want. It provides real-time stock tracking, customizable alerts, and detailed analytics, offering users comprehensive tools for effective investment management.
               </p>
               <div className="flex items-center mt-5 gap-1">
                 <a href="#" target="_blank">
@@ -62,7 +51,7 @@ export default function Projects() {
           </div>
         </FadeInOnScroll>
 
-        <FadeInOnScroll delay={0.25}>
+        {/* <FadeInOnScroll delay={0.25}>
           <div className="w-full flex flex-col md:flex-row bg-gray-500/5 p-5 rounded-xl border border-black/5 dark:border-white/5">
             <img src="/images/girl2.png" className="w-50" />
             <div>
@@ -138,7 +127,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </FadeInOnScroll>
+        </FadeInOnScroll> */}
       </div>
     </section>
   );

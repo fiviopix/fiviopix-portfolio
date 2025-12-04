@@ -93,3 +93,102 @@ export default function Contact() {
     </div>
   );
 }
+
+// import { useState } from "react";
+// import emailjs from "emailjs-com";
+// import { toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
+// export default function Contact() {
+//   const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+//   const handleChange = (e) => {
+//     setForm({ ...form, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+
+//     try {
+//       await emailjs.send(
+//         "service_mt6mi5u",
+//         "template_0n1hxwq",
+//         {
+//           name: form.name,
+//           email: form.email,
+//           message: form.message,
+//         },
+//         "rKecF16NSpxJjLQ5K"
+//       );
+
+//       setForm({ name: "", email: "", message: "" });
+//       toast.success("Message sent successfully! ✅");
+//     } catch (error) {
+//       console.error(error);
+//       toast.error("Failed to send message. Try again.");
+//     }
+//   };
+
+//   return (
+//     <section
+//       id="contact"
+//       className="flex flex-col items-center justify-center py-28 px-[8vw] md:px-[5vw] lg:px-[12vw]"
+//     >
+//       <div className="text-center mb-20">
+//         <h2 className="text-4xl font-bold text-white tracking-wider">CONTACT</h2>
+//         <div className="w-36 h-1 bg-purple-500 mx-auto mt-4"></div>
+//         <p className="text-gray-400 mt-6 text-lg font-semibold max-w-2xl mx-auto">
+//           Feel free to reach out to me for collaborations, opportunities, or any questions!
+//         </p>
+//       </div>
+
+//       {/* Wider Card */}
+//       <div className="w-full max-w-3xl bg-[#0d081f] p-10 rounded-xl shadow-xl border border-gray-700">
+//         <h3 className="text-2xl font-semibold text-white text-center">
+//           Drop Me a Message <span className="ml-1">💬</span>
+//         </h3>
+
+//         <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-6">
+//           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//             <input
+//               type="text"
+//               name="name"
+//               value={form.name}
+//               onChange={handleChange}
+//               placeholder="Your Name"
+//               required
+//               className="w-full p-4 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+//             />
+
+//             <input
+//               type="email"
+//               name="email"
+//               value={form.email}
+//               onChange={handleChange}
+//               placeholder="Your Email"
+//               required
+//               className="w-full p-4 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+//             />
+//           </div>
+
+//           <textarea
+//             name="message"
+//             value={form.message}
+//             onChange={handleChange}
+//             placeholder="Your Message"
+//             rows="5"
+//             required
+//             className="w-full p-4 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+//           />
+
+//           <button
+//             type="submit"
+//             className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-4 text-white text-lg font-semibold rounded-md hover:opacity-90 transition"
+//           >
+//             Send Message 🚀
+//           </button>
+//         </form>
+//       </div>
+//     </section>
+//   );
+// }
