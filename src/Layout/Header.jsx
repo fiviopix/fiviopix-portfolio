@@ -48,7 +48,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-30 ${
         scrolled ? "py-4" : "py-6"
       }`}
     >
@@ -56,7 +56,7 @@ const Header = () => {
         <nav
           className={`
             relative flex items-center justify-between px-6 py-3 rounded-full 
-            transition-all duration-300
+            transition-all duration-10
             ${
               scrolled
                 ? "bg-white/70 dark:bg-[#111]/70 backdrop-blur-md shadow-lg border border-gray-200 dark:border-white/10"
@@ -94,7 +94,7 @@ const Header = () => {
                   <Link
                     to={to}
                     smooth={true}
-                    duration={800}
+                    duration={10}
                     offset={-100}
                     spy={true}
                     activeClass="!text-white bg-blue-600 shadow-lg shadow-blue-500/25"

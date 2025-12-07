@@ -63,7 +63,7 @@ const Footer = () => {
                   <ScrollLink
                     to={item.toLowerCase()}
                     smooth={true}
-                    duration={800}
+                    duration={10}
                     offset={-100}
                     className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer transition-colors text-sm"
                   >
@@ -87,7 +87,7 @@ const Footer = () => {
              {/* Back to Top Button */}
              <button 
                onClick={scrollToTop}
-               className="flex items-center gap-2 px-5 py-3 rounded-xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white text-sm font-semibold hover:bg-blue-50 dark:hover:bg-blue-500/20 hover:border-blue-200 dark:hover:border-blue-500/30 transition-all duration-300 group"
+               className="flex items-center gap-2 px-5 py-3 rounded-xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white text-sm font-semibold hover:bg-blue-50 dark:hover:bg-blue-500/20 hover:border-blue-200 dark:hover:border-blue-500/30 transition-all duration-1 hover:scale-105 group"
              >
                Back to Top
                <ArrowUp size={16} className="group-hover:-translate-y-1 transition-transform" />
