@@ -16,7 +16,7 @@ export default function About() {
       <FadeInOnScroll delay={0.1}>
         <div className="flex flex-col md:flex-row items-end gap-6 mb-16 border-b border-gray-200 dark:border-white/10 pb-8">
           <div className="flex flex-col">
-            <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 dark:from-blue-400 dark:via-cyan-300 dark:to-white">
+            <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-cyan-500 to-purple-600 dark:from-blue-400 dark:via-cyan-300 dark:to-white">
               About Us.
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-xl text-lg leading-relaxed">
@@ -26,8 +26,8 @@ export default function About() {
             </p>
           </div>
           {/* Decorative Line */}
-          <div className="flex-grow hidden md:flex items-center gap-2 text-blue-500/50 mb-4">
-             <div className="h-[1px] w-full bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+          <div className="grow hidden md:flex items-center gap-2 text-blue-500/50 mb-4">
+             <div className="h-px w-full bg-linear-to-r from-blue-500/50 to-transparent"></div>
              <Circle size={10} className="fill-blue-500 animate-pulse" />
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function About() {
         {/* Mission (Span 5) */}
         <div className="lg:col-span-5">
           <FadeInOnScroll delay={0.3}>
-            <div className="h-full p-8 rounded-3xl bg-gradient-to-br from-blue-50 to-white dark:from-blue-900/20 dark:to-black border border-gray-200 dark:border-white/10 shadow-xl dark:shadow-none backdrop-blur-md hover:border-cyan-500/30 transition-all duration-500 group">
+            <div className="h-full p-8 rounded-3xl bg-linear-to-br from-blue-50 to-white dark:from-blue-900/20 dark:to-black border border-gray-200 dark:border-white/10 shadow-xl dark:shadow-none backdrop-blur-md hover:border-cyan-500/30 transition-all duration-500 group">
               <div className="flex items-center gap-4 mb-4">
                  <div className="p-3 rounded-full bg-cyan-100 dark:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 group-hover:rotate-12 transition-transform">
                   <Target size={28} />
@@ -133,7 +133,7 @@ export default function About() {
                   className="h-[70%] w-[70%] object-contain mix-blend-multiply"
                 />
               </div>
-              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mt-[-10px]">
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 -mt-2.5">
                 {item.title}
               </p>
             </div>
@@ -171,7 +171,7 @@ export default function About() {
                   className="h-[70%] w-[70%] object-contain mix-blend-multiply"
                 />
               </div>
-              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mt-[-10px]">
+              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 -mt-2.5">
                 {item.title}
               </p>
             </div>
